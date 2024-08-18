@@ -89,25 +89,25 @@
   @apply md:right-10  lg:right-24 xl:right-40
   }
   .card-home{
-  @apply w-[100%] h-auto flex flex-wrap justify-center items-center my-10;
+  @apply w-[100%] h-auto flex flex-wrap justify-center items-center my-12;
   } 
   .textes-card{
   @apply flex flex-col justify-evenly items-center lg:mx-10
   }
   .text-sale,
   .title-card{
-  @apply capitalize text-white  my-1 sm:text-xl sm:my-3  lg:text-2xl ;
+  @apply capitalize text-white  my-1 text-lg sm:text-xl sm:my-3  lg:text-2xl ;
   }
   .text-gender{
-  @apply uppercase font-[950] text-white text-2xl -rotate-2 my-1 sm:text-4xl sm:my-3
+  @apply uppercase font-[950] text-white text-3xl -rotate-2 my-1 sm:text-4xl sm:my-3
   lg:text-5xl lg:my-5;
-  text-shadow:1px 1px 2px white;
+  text-shadow:1px 1px 3px white;
   }
   .text-card{
   @apply font-bold text-white uppercase  sm:text-xl   lg:text-3xl ;
   }
   .sale{
-  @apply text-brooklyn font-[950] text-xl -rotate-1  sm:text-3xl sm:my-3 lg:text-4xl lg:my-5;
+  @apply text-brooklyn font-[950] text-2xl -rotate-1  sm:text-3xl sm:my-3 lg:text-4xl lg:my-5;
   text-shadow:1px 1px 2px red;
   }
   .btn-card{
@@ -116,7 +116,7 @@
   my-2 sm:text-xl sm:my-4  lg:text-2xl lg:my-5 ;
   }
   .img-home{
-  @apply w-[15rem] h-[15rem] cursor-pointer hover:opacity-60 duration-700 
+  @apply w-[200px] h-[250px] cursor-pointer hover:opacity-60 duration-700 
   sm:w-[250px] sm:h-[300px] sm:my-3 lg:w-[300px] lg:h-[350px];
   }
   .img-woman{
@@ -352,7 +352,7 @@
       @apply relative w-full h-full  flex  justify-center items-center
     }
     .Icon_footer{
-      @apply text-white text-3xl ml-[5%]  duration-500 sm:text-4xl lg:text-5xl
+      @apply text-white text-3xl mx-[4%]  duration-500 sm:text-4xl lg:text-5xl
       hover:text-brooklyn ;
     }
     .line{
