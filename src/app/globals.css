@@ -353,7 +353,7 @@
     }
     .Icon_footer{
       @apply text-white text-3xl mx-[4%]  duration-500 sm:text-4xl lg:text-5xl
-      hover:text-brooklyn ;
+      hover:text-brooklyn md:mx-[2%];
     }
     .line{
       @apply hidden md:inline md:w-[22%] xl:w-[25%] absolute   h-[2px] bg-[#F8EDED] ;
