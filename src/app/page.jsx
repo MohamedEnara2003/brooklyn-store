@@ -12,6 +12,7 @@ import Footer from "./components/footer";
 
 export default function Home() {
   const [showSearch , setShowSearch] = useState(false)
+
   return (
   <> 
   <Navbar setShowSearch = {setShowSearch}  />
