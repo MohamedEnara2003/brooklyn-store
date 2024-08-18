@@ -1,0 +1,31 @@
+{
+  "cart": [
+    {
+      "id": "1",
+      "quantity": 7,
+      "img": "https://static.zara.net/assets/public/8d2c/f838/606d493f8655/32388728f490/04174365406-a1/04174365406-a1.jpg?ts=1719830474466&w=563",
+      "type": "Tshirt",
+      "price": 400,
+      "color": "Light blue",
+      "size": "xl"
+    },
+    {
+      "id": "2",
+      "quantity": 1,
+      "img": "https://static.zara.net/assets/public/f916/1419/d33d49ca820f/c2678e5207a7/02222934800-e1/02222934800-e1.jpg?ts=1717662317991&w=563",
+      "type": "shirt",
+      "price": 1600,
+      "color": "black",
+      "size": "xl"
+    },
+    {
+      "id": "3",
+      "price": 300,
+      "quantity": 1,
+      "size": "md",
+      "color": "yellow",
+      "type": "Tshirt",
+      "img": "https://townteam.com/cdn/shop/files/TSH23SBRS20713TM1-Mustard.jpg?v=1699521174"
+    }
+  ]
+}
