@@ -10,15 +10,6 @@
       "size": "xl"
     },
     {
-      "id": "2",
-      "quantity": 1,
-      "img": "https://static.zara.net/assets/public/f916/1419/d33d49ca820f/c2678e5207a7/02222934800-e1/02222934800-e1.jpg?ts=1717662317991&w=563",
-      "type": "shirt",
-      "price": 1600,
-      "color": "black",
-      "size": "xl"
-    },
-    {
       "id": "3",
       "price": 300,
       "quantity": 1,

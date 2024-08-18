@@ -90,7 +90,7 @@ function Search(props){
     return(
     <>
     <div key={product.id} className={`${Gender == "women" ? "col w-[45%] md:w-1/4" : "hidden"}`}>
-    <Image src={product.url} alt={product.name} className="img-search"
+    <Image src={product.url} alt={product.name} className="img-search" width={140} height={120} 
     onClick={() =>{
     if(product.dataType === "women"){
     router.push(`/WomenProducts/${product.id}`)

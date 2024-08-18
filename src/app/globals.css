@@ -368,8 +368,8 @@
       @apply absolute bottom-40 w-full flex justify-center items-center
     }
     .link_footer{
-      @apply text-white capitalize italic hover:opacity-[0.5] duration-500 text-sm mx-2
-      sm:text-lg sm:mx-3 md:font-bold md:mx-8;
+      @apply text-white capitalize italic  duration-500 text-sm mx-2
+      sm:text-lg sm:mx-3 md:font-bold md:mx-8 hover:text-brooklyn;
     }
     .title_down_footer{
       @apply absolute  bottom-5  text-center text-white 
