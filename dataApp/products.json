@@ -649,11 +649,11 @@
       "dataType": "man"
     },
     {
-      "id": 57,
-      "url": "https://townteam.com/cdn/shop/files/JNS23SCCW22663TM1-White.jpg?v=1691073608",
-      "url2": "https://townteam.com/cdn/shop/files/JNS23SCCW22663TM1-White-2.jpg?v=1691073608",
-      "url3": "https://townteam.com/cdn/shop/files/JNS23SCCW22663TM1-White-4.jpg?v=1691073608",
-      "url4": "https://townteam.com/cdn/shop/files/JNS23SCCW22663TM1-White-3.jpg?v=1691073608",
+      "id": "57",
+      "url": "/white1.webp",
+      "url2": "/white2.webp",
+      "url3": "/white3.webp",
+      "url4": "/white4.webp",
       "name": "white jeans",
       "price": 700,
       "color": "white",
