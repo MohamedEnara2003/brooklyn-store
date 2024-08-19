@@ -149,6 +149,7 @@
   }
   .title-products{
   @apply text-xl uppercase italic font-[950] z-10 mx-[5%] md:text-2xl;
+  text-shadow: 1px 1px 2px #333;
   }
   .containar_products{
     @apply  relative w-full h-auto flex flex-wrap justify-center items-center overflow-hidden
@@ -160,14 +161,17 @@
     }
   
     .card_product{
-    @apply w-[250px] h-[320px] relative flex flex-col justify-evenly items-center mx-[4%] 
+    @apply w-[250px] h-auto relative flex flex-col justify-evenly items-center mx-[4%] 
     rounded-xl  my-[4%] bg-white duration-500 shadow-md shadow-black
     hover:shadow-sm hover:shadow-black hover:rotate-2 md:mx-[1%] md:h-[350px]
     ;
     }
+    .img-card{
+    @apply w-[200px] h-[200px] cursor-pointer ;
+    }
     .btn-details{
-    @apply  duration-1000  bg-black text-white font-medium   uppercase  
-    hover:opacity-70 text-sm my-2 p-1;
+    @apply  w-[80%] h-auto p-2 duration-1000  bg-black text-white    uppercase  
+    hover:opacity-70 text-sm my-2  shadow-sm shadow-black rounded-sm;
     }
     .info-product{
     @apply  italic uppercase text-sm font-bold my-1 text-center ; 
@@ -237,7 +241,7 @@
   }
   .color_product{
   @apply ml-[2%] rounded-[50%] cursor-pointer w-[25px] shadow-sm shadow-black hover:opacity-[0.5]
-  duration-500 border-black  2xl:w-[35px];
+  duration-500 border-black  2xl:w-[35px] lg:mx-2;
   }
 
   .faFaceGrinStars{

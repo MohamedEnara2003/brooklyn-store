@@ -12,7 +12,7 @@ function HeaderManProduct(props) {
     <div className="head-products">
         
     <p className="title-products">
-    <span className="sale text-2xl lg:text-4xl"> men's </span> {typeProduct }</p>
+    <span className="text-brooklyn text-2xl lg:text-4xl"> men's </span> {typeProduct }</p>
 
     <select id="select_manProduct" className="select_products bg-[#eee] mx-[5%]" onChange={(e) =>{
         props.setTypeProduct(e.target.value)
