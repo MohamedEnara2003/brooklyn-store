@@ -1,4 +1,5 @@
 'use client'
+import i18n from '@/src/i18n';
 import { fetchCart } from '@/src/rtk/slices/cartSlice';
 import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -94,20 +95,15 @@ function Navbar(props) {
                     </li >
 
         <li>
-        <Image src="/EN.png" alt="flag_lang" width={25} height={25}
-        className={`${il8n.language === "en" ? "flag inline-block" : "hidden"}`}/>
-
-        <Image src="/AR.png" alt="flag_lang" width={25} height={25}
-        className={`${il8n.language === "ar" ? "flag inline-block" : "hidden"}`}/>
-
-        <select  id="select_lang" onChange={(e) =>{
-        if( e.target.value == "en"){il8n.changeLanguage("en")}
-        else if( e.target.value == "ar"){il8n.changeLanguage("ar")}
-
+        <div className="flex items-center cursor-pointer hover:scale-105 duration-500" onClick={() =>{
+        if(i18n.language == "en"){i18n.changeLanguage("ar")}
+        else(i18n.changeLanguage("en"))
         }}>
-        <option value="en" className="option-lang">EN</option>
-        <option value="ar" className="option-lang">AR</option>
-        </select>
+        <Image src={`${i18n.language == "en" ? "/AR.png" : "/EN.png"}`} alt='lang' width={20} height={20}
+        className='flag'/>
+        <button type="button" className='option-lang'>
+        {i18n.language == "en" ? "ar" : "en"}</button>
+        </div>
         </li >
         </ul>
 

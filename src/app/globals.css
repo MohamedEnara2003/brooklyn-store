@@ -39,10 +39,10 @@
   @apply bg-transparent text-white font-bold uppercase outline-none lg:text-lg;
   }
   .option-lang{
-  @apply font-bold uppercase text-black ;
+  @apply font-bold uppercase text-white mx-1;
   }
   .flag{
-  @apply mx-1 w-[25px] ;
+  @apply w-[20px] ;
   }
   .container-icons-nav{
   @apply absolute top-7 right-0 w-[30%] md:w-[20%] lg:w-[15%] xl:w-[10%]
