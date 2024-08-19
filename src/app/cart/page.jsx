@@ -38,14 +38,14 @@ function CartSideBar(props) {
     const deleteCart = (cardId)=>{
         axios({
             method: 'delete',
-            url: `http://localhost:3003/cart/${cardId}`,
+            url: `http://localhost:3005/cart/${cardId}`,
         }).then(data => {
         getProductCart()
         })
     }
 
     const editQuantity = (id , quantity , img , type , color, size, price)=>{
-    axios.put( `http://localhost:3003/cart/${id}`,{
+    axios.put( `http://localhost:3005/cart/${id}`,{
     id, quantity, img , type , price , color , size ,
     }).then(data => data)
     getProductCart()

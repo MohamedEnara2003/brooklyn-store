@@ -28,7 +28,7 @@ function EditManProduct({params}) {
 
 
     useEffect(() =>{
-    fetch(`http://localhost:3004/MAN/${params.id}`
+    fetch(`http://localhost:3005/MAN/${params.id}`
     ).then(res => res.json()).then(data => setShowEditProduct(data))
     },[])
 
@@ -109,7 +109,7 @@ function EditManProduct({params}) {
     price == 0 || color == ""){
     e.preventDefault()
     }else{
-    axios.put(`http://localhost:3004/MAN/${params.id}`
+    axios.put(`http://localhost:3005/MAN/${params.id}`
     ,{
     id, url , url2 , url3 , url4, name, price , color, type, dataType
     }).then((data) => data)

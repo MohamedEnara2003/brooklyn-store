@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "concurrently --kill-others \"npm run dev\" \"npm run json-server\"",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "server": "next start",
+    "lint": "next lint",
+    "json-server": "json-server -p3005 --watch data.json"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
@@ -37,6 +40,7 @@
   "devDependencies": {
     "@types/node": "20.14.12",
     "@types/react": "18.3.3",
+    "concurrently": "^8.2.2",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "eslint-config-prettier": "^9.1.0",

@@ -35,7 +35,7 @@ function EditWomanProduct(){
     const deleteProduct = (id)=>{
         axios({
             method: 'delete',
-            url: `http://localhost:3004/Women/${id}`,
+            url: `http://localhost:3005/Women/${id}`,
         }).then(data => {
         RenderProduct()
         })

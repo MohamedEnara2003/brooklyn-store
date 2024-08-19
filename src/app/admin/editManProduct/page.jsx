@@ -33,7 +33,7 @@ function ManProduct(){
     const deleteProduct = (id)=>{
         axios({
             method: 'delete',
-            url: `http://localhost:3004/MAN/${id}`,
+            url: `http://localhost:3005/MAN/${id}`,
         }).then(data => {
         RenderProduct()
         })

@@ -47,7 +47,7 @@ function Create({params}){
     
     
     useEffect(()=>{
-    fetch(`${params.createid === "create2" ? "http://localhost:3004/Women":"http://localhost:3004/MAN"}`
+    fetch(`${params.createid === "create2" ? "http://localhost:3005/Women":"http://localhost:3005/MAN"}`
     ).then(res => res.json()).then(data => setProducts(data))
     },[])
     
@@ -88,7 +88,7 @@ function Create({params}){
     price == 0 || color == ""){
     e.preventDefault()
     }else{
-    axios.post(`${params.createid === "create2" ? "http://localhost:3004/Women":"http://localhost:3004/MAN"}`
+    axios.post(`${params.createid === "create2" ? "http://localhost:3005/Women":"http://localhost:3005/MAN"}`
     ,{
     id, url , url2 , url3 , url4, name, price , color, type, dataType 
     }).then((data) => data)

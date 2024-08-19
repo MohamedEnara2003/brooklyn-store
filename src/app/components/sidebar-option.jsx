@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartPlus, faFaceGrinStars, faMinus,faPlus,} from "@fortawesome/free-solid-svg-icons";
+import { faCartPlus, faFaceGrinStars, } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
@@ -26,11 +26,11 @@ function SideBarControl(props){
     const router = useRouter()
  
     useEffect(() =>{
-    fetch("http://localhost:3004/sizes").then(res => res.json()).then(data => setSize(data))
+    fetch("http://localhost:3005/sizes").then(res => res.json()).then(data => setSize(data))
     },[])
 
     useEffect(() =>{
-    fetch("http://localhost:3003/cart").then(res => res.json()).then(data => setCart(data))
+    fetch("http://localhost:3005/cart").then(res => res.json()).then(data => setCart(data))
     },[])
     
 
@@ -124,7 +124,7 @@ function SideBarControl(props){
     let type = props.type;
     let img = props.img;
     
-    axios.post("http://localhost:3003/cart",{
+    axios.post("http://localhost:3005/cart",{
     id, price, quantity, size, color, type, img
     }).then(data => setCart(data))
     router.push('/cart')

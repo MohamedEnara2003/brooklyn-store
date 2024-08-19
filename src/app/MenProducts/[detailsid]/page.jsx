@@ -15,7 +15,7 @@ import Footer from "../../components/footer";
 
 
 function Details({params})  {
-    const UrlApi = "http://localhost:3004/MAN"
+    const UrlApi = "http://localhost:3005/MAN"
     
     const [details , setDetails] = useState([])
 
