@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "concurrently --kill-others \"npm run dev\" \"npm run json-server\"",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run json-server\"",
     "dev": "next dev",
     "build": "next build",
     "server": "next start",
