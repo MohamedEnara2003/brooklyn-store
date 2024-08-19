@@ -160,7 +160,7 @@
     }
   
     .card_product{
-    @apply w-[250px] h-[300px] relative flex flex-col justify-evenly items-center mx-[4%] 
+    @apply w-[250px] h-[320px] relative flex flex-col justify-evenly items-center mx-[4%] 
     rounded-xl  my-[4%] bg-white duration-500 shadow-md shadow-black
     hover:shadow-sm hover:shadow-black hover:rotate-2 md:mx-[1%] md:h-[350px]
     ;

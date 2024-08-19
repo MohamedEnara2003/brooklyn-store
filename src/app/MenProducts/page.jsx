@@ -61,7 +61,7 @@ function MenProducts(){
 
         <Image src={randomImg == 0 ? manProduct.url :null || randomImg == 1 ? manProduct.url2 :null ||
         randomImg == 2 ? manProduct.url3 :null ||randomImg == 3 ? manProduct.url4 :null }
-        alt={manProduct.name} width={170} height={170} 
+        alt={manProduct.name} width={150} height={150} 
         onClick={()=>{router.push(`/MenProducts/${manProduct.id}`)}} />
 
         <p className="info-product">{manProduct.name}</p>

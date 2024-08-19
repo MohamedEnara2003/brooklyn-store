@@ -647,18 +647,6 @@
       "color": "black",
       "type": "jackets",
       "dataType": "man"
-    },
-    {
-      "id": "57",
-      "url": "/white1.webp",
-      "url2": "/white2.webp",
-      "url3": "/white3.webp",
-      "url4": "/white4.webp",
-      "name": "white jeans",
-      "price": 700,
-      "color": "white",
-      "type": "jeans",
-      "dataType": "man"
     }
   ],
   "sizes": [
