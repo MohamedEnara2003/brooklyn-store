@@ -29,7 +29,7 @@ function Details({params})  {
     },[])
 
     useEffect(()=>{
-    fetch(`${UrlApi}/${params.detailsid}`,{ next: { revalidate: 0 } })
+    fetch(`${UrlApi}/${params.detailsid}`,{ next: { revalidate: 5000 } })
     .then((res)=> res.json()).then(data => setDetails(data))
     },[])
 
