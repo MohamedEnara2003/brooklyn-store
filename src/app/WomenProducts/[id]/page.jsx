@@ -30,7 +30,8 @@ function Details({params})  {
     },[])
 
     useEffect(()=>{
-    fetch(`${UrlApi}/${params.id}`).then((res)=> res.json()).then(data => setDetails(data))
+    fetch(`${UrlApi}/${params.id}`,{ next: { revalidate: 0 } }
+    ).then((res)=> res.json()).then(data => setDetails(data))
     },[])
 
     const [t , il8n] = useTranslation()

@@ -16,7 +16,7 @@ import Footer from "../../components/footer";
 
 function Details({params})  {
     const UrlApi = "http://localhost:3005/MAN"
-    
+
     const [details , setDetails] = useState([])
 
     const [ActiveShowImg , setActiveShowImg] = useState(0)
@@ -29,7 +29,8 @@ function Details({params})  {
     },[])
 
     useEffect(()=>{
-    fetch(`${UrlApi}/${params.detailsid}`).then((res)=> res.json()).then(data => setDetails(data))
+    fetch(`${UrlApi}/${params.detailsid}`,{ next: { revalidate: 0 } })
+    .then((res)=> res.json()).then(data => setDetails(data))
     },[])
 
     const [t , il8n] = useTranslation()

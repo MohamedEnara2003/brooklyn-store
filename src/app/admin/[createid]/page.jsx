@@ -48,7 +48,7 @@ function Create({params}){
     
     useEffect(()=>{
     fetch(`${params.createid === "create2" ? "http://localhost:3005/Women":"http://localhost:3005/MAN"}`
-    ).then(res => res.json()).then(data => setProducts(data))
+    ,{ next: { revalidate: 0 } }).then(res => res.json()).then(data => setProducts(data))
     },[])
     
 

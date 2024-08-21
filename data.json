@@ -815,6 +815,18 @@
       "color": " Beige",
       "type": "pants",
       "dataType": "man"
+    },
+    {
+      "id": 71,
+      "url": "https://static.zara.net/assets/public/2eba/de69/a4574458a462/d7c4f4c837d8/05575404800-p/05575404800-p.jpg?ts=1724151033730&w=563",
+      "url2": "https://static.zara.net/assets/public/f918/d46f/a1bc4219b68f/6a01ef03c46a/05575404800-a3/05575404800-a3.jpg?ts=1724151033152&w=563",
+      "url3": "https://static.zara.net/assets/public/43d8/b73c/066f44818d4a/bf6b4f19b928/08062400800-e1/08062400800-e1.jpg?ts=1708000756240&w=563",
+      "url4": "https://static.zara.net/assets/public/f666/caac/31e941b88f12/77bd2be62bd2/08062400800-e2/08062400800-e2.jpg?ts=1708000749998&w=563",
+      "name": "black LEG JEANS",
+      "price": 700,
+      "color": "black",
+      "type": "jeans",
+      "dataType": "man"
     }
   ],
   "sizes": [
@@ -1416,12 +1428,30 @@
   "cart": [
     {
       "id": "1",
-      "quantity": 7,
+      "quantity": 8,
       "img": "https://static.zara.net/assets/public/8d2c/f838/606d493f8655/32388728f490/04174365406-a1/04174365406-a1.jpg?ts=1719830474466&w=563",
       "type": "Tshirt",
       "price": 400,
       "color": "Light blue",
       "size": "xl"
+    },
+    {
+      "id": "2",
+      "quantity": 1,
+      "img": "https://townteam.com/cdn/shop/products/JAC23WLET28363TM1_BLACK.jpg?v=1678109178",
+      "type": "jackets",
+      "price": 1800,
+      "color": "black",
+      "size": "md"
+    },
+    {
+      "id": "3",
+      "price": 2800,
+      "quantity": 1,
+      "size": "lg",
+      "color": "black",
+      "type": "jackets",
+      "img": "https://townteam.com/cdn/shop/files/JAC24WLET28387TM1_Black.jpg?v=1701854963"
     }
   ]
 }
