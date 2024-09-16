@@ -139,8 +139,9 @@
     @apply bg-black relative w-full h-auto flex flex-wrap justify-center items-center z-50;
   }
   .img-product{
-    @apply rounded-md cursor-pointer hover:scale-105 duration-700 shadow-md shadow-[#eee] 
-    w-[90%] sm:w-[60%] md:w-[45%] md:h-[40%] lg:w-[40%] lg:h-[40%] h-[50%] mx-5 my-5;
+    @apply rounded-md cursor-pointer hover:scale-105 duration-700 shadow-md shadow-[#eee]  mx-5 my-5
+    w-[320px] h-[200px] sm:w-[450px] sm:h-[300px] md:w-[350px] md:h-[250px] 
+    lg:w-[450px] lg:h-[350px]  xl:w-[500px] xl:h-[400px]  2xl:w-[600px] 2xl:h-[500px]     object-cover;
   }
 
   .head-products{
