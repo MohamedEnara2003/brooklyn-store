@@ -21,6 +21,10 @@ function Details({params})  {
 
     const [ActiveShowImg , setActiveShowImg] = useState(0)
 
+    useEffect(()=>{
+        setActiveShowImg(details?.url)
+    },[details])
+
     const manProducts = useSelector(state => state.man)
     const dispatch = useDispatch()
 
@@ -46,27 +50,29 @@ function Details({params})  {
 
     <p className="title_discound"> {"sale"} 50% </p>
     
-    <Image src={
-    ActiveShowImg == 0 ? details.url : null || ActiveShowImg == 1 ? details.url2 : null  ||
-    ActiveShowImg == 2 ? details.url3 : null || ActiveShowImg == 3 ? details.url4 : null } 
-    alt={details.name} className="active-showImg" width={250} height={200}/>
+    <Image src={ActiveShowImg ? ActiveShowImg : '/'} 
+    alt='imgProductActive' className="active-showImg" width={250} height={200}/>
 
     <div className="show_produect">
 
-    <Image src={details.url} alt={details.name}  
-    className={`${ActiveShowImg == 0 ? "opacity-35 " : ""} showImg`}onClick={() =>{setActiveShowImg(0)}} 
+    <Image src={details?.url ? details?.url : '/'} alt='imgProduct'
+    className={`${ActiveShowImg == 0 ? "opacity-35 " : ""} showImg`}
+    onClick={() =>{setActiveShowImg(details?.url)}} 
     width={80} height={80}/>
 
-    <Image src={details.url2} alt={details.name}  
-    className={`${ActiveShowImg == 1 ? "opacity-35 " : ""} showImg`}onClick={() =>{setActiveShowImg(1)}} 
+    <Image src={details?.url2 ? details?.url2 : '/'} alt='imgProduct'
+    className={`${ActiveShowImg == 1 ? "opacity-35 " : ""} showImg`}
+    onClick={() =>{setActiveShowImg(details?.url2)}} 
     width={80} height={80}/>
 
-    <Image src={details.url3} alt={details.name}  
-    className={`${ActiveShowImg == 2 ? "opacity-35 " : ""} showImg`}onClick={() =>{setActiveShowImg(2)}} 
+    <Image src={details?.url3 ? details?.url3 : '/'} alt='imgProduct'
+    className={`${ActiveShowImg == 2 ? "opacity-35 " : ""} showImg`}
+    onClick={() =>{setActiveShowImg(details.url3)}} 
     width={80} height={80}/>
 
-    <Image src={details.url4} alt={details.name}  
-    className={`${ActiveShowImg == 3 ? "opacity-35 " : ""} showImg`}onClick={() =>{setActiveShowImg(3)}} 
+    <Image src={details?.url4 ? details?.url4 : '/'} alt='imgProduct'
+    className={`${ActiveShowImg == 3 ? "opacity-35 " : ""} showImg`}
+    onClick={() =>{setActiveShowImg(details?.url4)}} 
     width={80} height={80}/>
     </div>
 
