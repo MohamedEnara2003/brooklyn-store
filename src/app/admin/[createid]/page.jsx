@@ -47,7 +47,7 @@ function Create({params}){
     
     
     useEffect(()=>{
-    fetch(`${params.createid === "create2" ? "http://localhost:3005/Women":"http://localhost:3005/MAN"}`
+    fetch(`${params.createid === "create2" ? "https://brooklyn-vercel.vercel.app/Women":"https://brooklyn-vercel.vercel.app/MAN"}`
     ,{ next: { revalidate: 0 } }).then(res => res.json()).then(data => setProducts(data))
     },[])
     
@@ -88,7 +88,7 @@ function Create({params}){
     price == 0 || color == ""){
     e.preventDefault()
     }else{
-    axios.post(`${params.createid === "create2" ? "http://localhost:3005/Women":"http://localhost:3005/MAN"}`
+    axios.post(`${params.createid === "create2" ? "https://brooklyn-vercel.vercel.app/Women":"https://brooklyn-vercel.vercel.app/MAN"}`
     ,{
     id, url , url2 , url3 , url4, name, price , color, type, dataType 
     }).then((data) => data)

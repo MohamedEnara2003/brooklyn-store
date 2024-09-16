@@ -3,11 +3,12 @@ import Image from "next/image";
 import Navbar from "./components/navbar";
 import "../i18n";
 import Search from "./components/search";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SectionOne from "./components/SectionOne";
 import ShowProducts from "./components/showProduct";
 import Information from "./components/information";
 import Footer from "./components/footer";
+
 
 
 export default function Home() {

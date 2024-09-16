@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "concurrently --kill-others \"npm run dev\" \"npm run json-server\"",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run json-server\"",
     "dev": "next dev",
     "build": "next build",
     "server": "next start",
     "lint": "next lint",
     "json-server": "json-server -p3005 --watch data.json"
-
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",

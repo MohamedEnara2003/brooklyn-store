@@ -22,7 +22,7 @@ function SidebarProducts (props){
     <p className="p_sidebar">Control all products</p>
 
     
-    <label className="description sale ">description :</label>
+    <label className="description">description :</label>
     <p className="description_admin">The admin page is responsible for all Brooklyn page
     products and its most important features are adding new products, deleting products,
     or modifying products.</p>

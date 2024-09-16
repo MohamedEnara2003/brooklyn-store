@@ -27,7 +27,7 @@ function EditManProduct({params}) {
 
 
     useEffect(() =>{
-    fetch(`http://localhost:3005/Women/${params.id}`
+    fetch(`https://brooklyn-vercel.vercel.app/Women/${params.id}`
     ).then(res => res.json()).then(data => setShowEditProduct(data))
     },[])
 
@@ -108,7 +108,7 @@ function EditManProduct({params}) {
     price == 0 || color == ""){
     e.preventDefault()
     }else{
-    axios.put(`http://localhost:3005/Women/${params.id}`
+    axios.put(`https://brooklyn-vercel.vercel.app/Women/${params.id}`
     ,{
     id, url , url2 , url3 , url4, name, price , color, type,  dataType
     }).then((data) => data)

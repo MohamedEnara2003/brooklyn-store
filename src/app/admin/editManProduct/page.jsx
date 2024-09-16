@@ -2,7 +2,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDeleteLeft, faEdit} from "@fortawesome/free-solid-svg-icons";
+import { faDeleteLeft, faEdit, faTrashAlt} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -33,7 +33,7 @@ function ManProduct(){
     const deleteProduct = (id)=>{
         axios({
             method: 'delete',
-            url: `http://localhost:3005/MAN/${id}`,
+            url: `https://brooklyn-vercel.vercel.app/MAN/${id}`,
         }).then(data => {
         RenderProduct()
         })
@@ -77,7 +77,8 @@ function ManProduct(){
             <span className="td_text">{product.type} </span>
             <span className="td_text">{product.price}</span>
             <Image src={product.url} alt={product.name} className="td_image" width={200} height={200}/>
-            <FontAwesomeIcon icon={faDeleteLeft} className="cursor-pointer" onClick={()=>{
+
+            <FontAwesomeIcon icon={faTrashAlt} className="btn-del" onClick={()=>{
             Swal.fire({
             title:`Are You Sure To Delete This Product ?`,
             color: "black",
@@ -85,7 +86,7 @@ function ManProduct(){
             animation: true
             }).then((data) => {if(data.isConfirmed){deleteProduct(product.id)}})}}/>
     
-            <FontAwesomeIcon icon={faEdit}  className="cursor-pointer" onClick={() =>{
+            <FontAwesomeIcon icon={faEdit}  className="btn-edit" onClick={() =>{
             router.push(`/admin/editManProduct/${product.id}`)
             }}/>
 

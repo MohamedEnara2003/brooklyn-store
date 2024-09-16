@@ -4,27 +4,11 @@
 
 
 @layer components{
-    .admin{
-    @apply w-full h-screen bg-white relative flex flex-col justify-center items-center;
-    }
-    .form_admin {
-    @apply w-full h-full flex justify-center items-center;
-    }
-    .input_password{
-    @apply w-1/3 py-2 border-[2px] border-black rounded-sm shadow-sm shadow-black p-1
-    text-xl;
-    }
-    .input_password::placeholder{
-    @apply text-center text-black uppercase font-extrabold
-    }
-    .msg_Warning{
-    @apply absolute top-[35%] translate-y-[-35%] text-2xl uppercase font-[950] italic;
-    }
 
     .admin_page{
     @apply relative bg-white  w-full h-screen flex justify-center items-center;
     }
-    
+
     .sidebar_products{
     @apply  w-full bg-white h-screen absolute  flex flex-col justify-center items-center
     shadow-md shadow-black;
@@ -38,14 +22,15 @@
     }
     .btn_products{
     @apply bg-red-700 text-gray-100  uppercase  shadow-sm shadow-black
-    border-[2px] border-black hover:bg-transparent hover:text-black duration-500
-    mx-[2%] p-1 my-5;
+    border-[2px] border-red-700 hover:bg-transparent hover:text-black duration-500
+    mx-[2%] p-1 my-5 lg:text-lg;
     }
     .description{
-    @apply text-gray-600 text-lg md:text-xl  text-center;;
+    @apply font-[900] text-gray-600 text-xl md:text-2xl lg:text-3xl  text-center;
+    text-shadow : 1px 1px 3px gray ; 
     }
     .description_admin{
-    @apply  m-2  text-gray-600 text-sm  text-center md:text-[1rem];
+    @apply  m-2  text-gray-600 text-sm lg:text-lg text-center md:text-[1rem];
     }
 
     .container-edit-Product{
@@ -75,7 +60,12 @@
     @apply w-full flex flex-wrap justify-evenly items-center my-5 shadow-sm shadow-gray-600 
     xl:w-[80%] ;
     }
-
+    .btn-del{
+    @apply cursor-pointer text-red-600  lg:text-lg hover:opacity-65 duration-500;
+    }
+    .btn-edit{
+    @apply cursor-pointer lg:text-lg hover:opacity-65 duration-500;
+    }
     .td_text{
     @apply whitespace-nowrap px-6 py-4 font-bold my-2;
     }

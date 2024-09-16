@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchCart = createAsyncThunk(
     "CartSlice/fetchCart ",async()=>{
-    const res = await fetch("http://localhost:3005/cart");
+    const res = await fetch("https://brooklyn-vercel.vercel.app/cart");
     const data = await res.json();
     return data ;
 })

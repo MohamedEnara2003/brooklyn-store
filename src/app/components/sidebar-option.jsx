@@ -26,11 +26,11 @@ function SideBarControl(props){
     const router = useRouter()
  
     useEffect(() =>{
-    fetch("http://localhost:3005/sizes").then(res => res.json()).then(data => setSize(data))
+    fetch("https://brooklyn-vercel.vercel.app/sizes").then(res => res.json()).then(data => setSize(data))
     },[])
 
     useEffect(() =>{
-    fetch("http://localhost:3005/cart").then(res => res.json()).then(data => setCart(data))
+    fetch("https://brooklyn-vercel.vercel.app/cart").then(res => res.json()).then(data => setCart(data))
     },[])
     
 
