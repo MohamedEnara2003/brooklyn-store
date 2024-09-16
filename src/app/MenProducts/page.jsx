@@ -59,8 +59,9 @@ function MenProducts(){
         onMouseOver={() => {setHideBtn(manProduct.id)}}
         onMouseLeave={() =>{setHideBtn(false)}}>
 
-        <Image src={randomImg == 0 ? manProduct.url :null || randomImg == 1 ? manProduct.url2 :null ||
-        randomImg == 2 ? manProduct.url3 :null ||randomImg == 3 ? manProduct.url4 :null }
+        <Image src={randomImg == 0 ? manProduct.url : '/loading-gif.gif' || randomImg == 1 ? manProduct.url2 :'/loading-gif.gif'||
+        randomImg == 2 ? manProduct.url3 :'/loading-gif.gif' ||randomImg == 3 ? manProduct.url4 :'/loading-gif.gif' }
+
         alt={manProduct.name} width={150} height={150} className="img-card"
         onClick={()=>{router.push(`/MenProducts/${manProduct.id}`)}} />
 

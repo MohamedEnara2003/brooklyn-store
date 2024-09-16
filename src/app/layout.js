@@ -3,6 +3,7 @@ import "./globals.css";
 import "./admin/admin.css";
 import "./checkout/checkout.css";
 import { Providers } from "../rtk/Provider";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const noto_Serif= Noto_Serif({ 
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body className={noto_Serif.className}>
         <Providers>
         {children}
+        <SpeedInsights />
         </Providers>
         </body>
     </html>

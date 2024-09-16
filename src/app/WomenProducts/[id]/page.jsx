@@ -51,26 +51,26 @@ function Details({params})  {
 
     <p className="title_discound"> {"sale"} 50% </p>
     
-    <Image src={ActiveShowImg ? ActiveShowImg : '/'}
+    <Image src={ActiveShowImg ? ActiveShowImg : '/loading-gif.gif'}
     alt='imgProductActive' className="active-showImg"  width={200} height={200}/>
 
     <div className="show_produect">
-    <Image src={details?.url ? details?.url : '/'} alt='imgProduct'
+    <Image src={details?.url ? details?.url : '/loading-gif.gif'} alt='imgProduct'
     className={`${ActiveShowImg == 0 ? "opacity-35 " : ""} showImg`}
     onClick={() =>{setActiveShowImg(details?.url)}} 
     width={80} height={80}/>
 
-    <Image src={details?.url2 ? details?.url2 : '/'} alt='imgProduct'  
+    <Image src={details?.url2 ? details?.url2 : '/loading-gif.gif'} alt='imgProduct'  
     className={`${ActiveShowImg == 1 ? "opacity-35 " : ""} showImg`}
     onClick={() =>{setActiveShowImg(details?.url2)}} 
     width={80} height={80}/>
 
-    <Image src={details?.url3 ? details?.url3 : '/'} alt='imgProduct'  
+    <Image src={details?.url3 ? details?.url3 : '/loading-gif.gif'} alt='imgProduct'  
     className={`${ActiveShowImg == 2 ? "opacity-35 " : ""} showImg`}
     onClick={() =>{setActiveShowImg(details?.url3)}} 
     width={80} height={80}/>
 
-    <Image src={details?.url4 ? details?.url4 : '/'} alt='imgProduct'  
+    <Image src={details?.url4 ? details?.url4 : '/loading-gif.gif'} alt='imgProduct'  
     className={`${ActiveShowImg == 3 ? "opacity-35 " : ""} showImg`}
     onClick={() =>{setActiveShowImg(details?.url4)}} 
     width={80} height={80}/>

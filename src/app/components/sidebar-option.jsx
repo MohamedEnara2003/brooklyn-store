@@ -124,7 +124,7 @@ function SideBarControl(props){
     let type = props.type;
     let img = props.img;
     
-    axios.post("http://localhost:3005/cart",{
+    axios.post("https://brooklyn-vercel.vercel.app/cart",{
     id, price, quantity, size, color, type, img
     }).then(data => setCart(data))
     router.push('/cart')

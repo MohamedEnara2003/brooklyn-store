@@ -154,7 +154,7 @@
   }
   .containar_products{
     @apply  relative w-full h-auto flex flex-wrap justify-center items-center overflow-hidden
-    bg-[#F8EDED];
+    bg-white;
     }
   
     .select_products{
@@ -182,7 +182,7 @@
     }
   
   .details{
-    @apply w-full h-auto relative bg-[#F8EDED] flex flex-wrap justify-center items-center;
+    @apply w-full h-auto relative bg-white flex flex-wrap justify-center items-center;
   }
   .container_details{
     @apply  w-full h-full  flex flex-col justify-center items-center 
@@ -301,7 +301,7 @@
       duration-500;
     }
     .container_carts{
-      @apply w-[95%] h-auto bg-[#F8EDED]  flex flex-col justify-evenly items-center  my-14
+      @apply w-[95%] h-auto bg-white  flex flex-col justify-evenly items-center  my-14
       md:w-[80%] lg:w-[60%]  md:mr-5;
     }
 
@@ -323,7 +323,7 @@
     @apply text-sm
     }
     .model-show-img{
-    @apply w-[80%] h-[40%] shadow-sm shadow-black bg-[#F8EDED] flex justify-center z-[1000] 
+    @apply w-[80%] h-[40%] shadow-sm shadow-black bg-white flex justify-center z-[1000] 
     xl:w-[40%] xl:h-[60%] sm:w-[60%] md:w-[50%] lg:w-[45%] lg:h-[50%];
     }
     .img-model{
@@ -361,7 +361,7 @@
       hover:text-brooklyn md:mx-[2%];
     }
     .line{
-      @apply hidden md:inline md:w-[22%] xl:w-[25%] absolute   h-[2px] bg-[#F8EDED] ;
+      @apply hidden md:inline md:w-[22%] xl:w-[25%] absolute   h-[2px] bg-white ;
     }
     .line_left{
       @apply left-2

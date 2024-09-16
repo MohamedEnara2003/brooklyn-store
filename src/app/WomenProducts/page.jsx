@@ -56,8 +56,8 @@ function  WomenProducts(){
         onMouseOver={() => {setHideBtn(womenProduct.id)}}
         onMouseLeave={() =>{setHideBtn(false)}}>
 
-        <Image src={randomImg == 0 ? womenProduct.url :null || randomImg == 1 ? womenProduct.url2 :null ||
-        randomImg == 2 ? womenProduct.url3 :null ||randomImg == 3 ? womenProduct.url4 :null }
+        <Image src={randomImg == 0 ? womenProduct.url :'/loading-gif.gif'|| randomImg == 1 ? womenProduct.url2 :'/loading-gif.gif'||
+        randomImg == 2 ? womenProduct.url3 :'/loading-gif.gif' ||randomImg == 3 ? womenProduct.url4 :'/loading-gif.gif' }
         alt={womenProduct.name} width={150} height={150} className="img-card"
         onClick={()=>{router.push(`/WomenProducts/${womenProduct.id}`)}} />
 
